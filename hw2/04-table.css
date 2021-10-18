@@ -2,10 +2,35 @@
   --lightorange: rgba(255, 165, 0, 0.1);
 }
 
+th {
+  width: 200px;
+  padding: 10px;
+  font-size: 1.2em;
+  border: 1px solid black;
+}
+
+td {
+  padding: 10px;
+  margin: 10px;
+}
+
 .table-heading {
   /* use green and white for the colors - these colors are defined in the styles.css file */
+  background-color: darkgreen;
+  color: white;
 }
 
 .channel {
   /* use orange and black for the colors - these colors are defined in the styles.css file */
+  background-color: orange;
+  color: black;
+}
+
+tbody tr td {
+  background-color: white;
+  border: 1px solid black;
+}
+
+td:hover {
+  background-color: lightgray;
 }

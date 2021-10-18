@@ -5,17 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>05 - Form</title>
-    <!-- <link rel="stylesheet" href="../styles.css" />
-    <link rel="stylesheet" href="../hw2/05-form.css" /> -->
+    <link rel="stylesheet" href="../styles.css" />
+    <link rel="stylesheet" href="../hw2/05-form.css" />
   </head>
   <body>
     <main>
-      <form action="">
+      <form action="" class="form">
         <h1>Registration Form</h1>
         <!-- Add your code here -->
         <div>
-          <label for="username">Username: </label>
+          <label class="label1 legend-bold" for="username">Username: </label>
           <input
+            id="input1"
             type="text"
             name="Username"
             id="username"
@@ -24,8 +25,9 @@
         </div>
         <br />
         <div>
-          <label for="email">Email: </label>
+          <label class="label1 legend-bold" for="email">Email: </label>
           <input
+            class="input1"
             type="email"
             name="Email"
             id="email"
@@ -34,8 +36,9 @@
         </div>
         <br />
         <div>
-          <label for="password">Password: </label>
+          <label class="label1 legend-bold" for="password">Password: </label>
           <input
+            class="input1"
             type="password"
             name="Password"
             id="password"
@@ -43,20 +46,23 @@
           />
         </div>
         <br />
-        <fieldset>
-          <legend>Would you like to sign up for the newsletter?</legend>
+        <div>
+          <legend class="legend-bold">
+            Would you like to sign up for the newsletter?
+          </legend>
           <input type="radio" name="newsletter" id="yes" />
           <label for="yes">Yes, sign me up</label>
+          <br />
           <input type="radio" name="newsletter" id="no" />
           <label for="no">No, thank you</label>
-        </fieldset>
-        <br />
-        <div>
-          <label for="date">Date: </label>
-          <input type="date" name="Date" id="date" />
         </div>
         <br />
         <div>
+          <label class="label1 legend-bold" for="date">Date: </label>
+          <input class="input1" type="date" name="Date" id="date" />
+        </div>
+        <br />
+        <div class="form-element">
           <input type="submit" value="Submit" />
           <input type="reset" value="Reset" />
         </div>

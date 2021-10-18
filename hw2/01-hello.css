@@ -1,3 +1,23 @@
 .container {
   width: 50vw;
 }
+
+.imgborder {
+  border-radius: 15vmax;
+}
+
+body {
+  text-align: center;
+  width: 50vw;
+  margin: auto;
+  border: 1px solid black;
+  padding: 10px;
+}
+
+p {
+  text-align: start;
+}
+
+p::first-line {
+  font-weight: bold;
+}
