@@ -1,5 +1,13 @@
 const getPrimes = () => {
   // Add your code here
+
+  for (let i = 2; i <= 100; i += 1) {
+    for (let j = 2; j <= i; j += 1) {
+      if (i === j) {
+        console.log(i);
+      } else if (i % j === 0) break;
+    }
+  }
 };
 
 getPrimes();
