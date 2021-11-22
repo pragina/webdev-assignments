@@ -147,10 +147,6 @@ const mapStarships = (input) => {
   // Return an array with the name, manufacturer, and cost of each ship
   // Format: "Star Destroyer, manufactured by Kuat Drive Yards - cost: 150,000,000 credits"
 
-  // const result = input.map(
-  //   (item) =>
-  //     `${item.name}, manufactured by ${item.manufacturer} - cost: ${item.cost_in_credits} credits`
-  // );
   const result = input.map(
     (item) =>
       item.name +
@@ -160,13 +156,8 @@ const mapStarships = (input) => {
       parseInt(item.cost_in_credits).toLocaleString() +
       " credits"
   );
-  //  below 2 lines not working while testing
-  // const result1 = result.name;
-  // console.log(result1);
 
-  //console.log(result);
   return result;
-  //return "mapStarships";
 };
 
 const filterStarships = (input) => {
@@ -175,27 +166,21 @@ const filterStarships = (input) => {
   const result = input.filter(
     (item) => parseInt(item.passengers) < 10 && parseInt(item.crew) > 1
   );
-  //console.log(result);
+
   return result;
-  //return "filterStarships";
 };
 
 const reduceStarships = (input) => {
   // Return the cost to purchase all ships in the input array
   const current = input.map((item) => parseInt(item.cost_in_credits));
-  //console.log(current);
-
-  //const reducer = current(accumulator, current) > accumulator + current;
 
   const result = current.reduce(
     (accumulator, current) => accumulator + (current = current || 0)
   );
-  //console.log(result.toLocaleString());
 
   const cost = `The cost of all starships is ${result.toLocaleString()} credits`;
-  //console.log(cost);
+
   return cost;
-  //return `reduceStarships `;
 };
 
 console.log(mapStarships(starships));
